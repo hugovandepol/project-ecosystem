@@ -1,6 +1,6 @@
 # PowSyBl
 
-**Last Updated:** 2026-04-27
+**Last Updated:** 2026-07-01
 
 ## Table of Contents
 
@@ -107,6 +107,7 @@ Planning & Analysis
 - **FIDOpower**: FIDOpower provides cross-tool data exchange for power systems analysis. PowSyBl is a potential consumer/producer of data within such exchange workflows. No direct technical integration currently.
 - **Grid2Op**: A backend (pypowsybl2grid) enables PowSyBl to serve as the power flow engine within Grid2Op's simulation environment for developing automated grid control strategies.
 - **OpenSynth**: Integration — OpenSynth's D-GITT datasets publish transmission topology from the French network in PowSyBl's XIIDM format, loaded using pypowsybl. PowSyBl is the primary tool for working with D-GITT data.
+- **EnerGNN**: Data pathway — EnerGNN's documented use-case workflow imports transmission grid data from PyPowSyBl (PowSyBl's Python interface) to populate the H2MG graph representation it trains graph neural networks on.
 
 ## Maturity & Adoption
 

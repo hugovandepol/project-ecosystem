@@ -2,7 +2,7 @@
 
 Terms and acronyms used across LF Energy project overviews. Target audience: utility engineers with familiarity in digital systems.
 
-**Last Updated:** 2026-06-15
+**Last Updated:** 2026-07-01
 
 <!-- When adding entries, maintain alphabetical order within each section. -->
 
@@ -89,6 +89,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 - **SSD** — System Specification Description. An IEC 61850-6 SCL file type that describes the substation automation system based on the single-line diagram and logical node representation, before IED-specific configuration is added.
 - **TO** — Transmission Owner. Entity that owns transmission facilities on the bulk electric system. In North America, TOs are responsible for maintaining and rating their facilities and submitting those ratings to the ISO/RTO. Distinct from TSO (the European term for the entity that both owns and operates the transmission grid).
 - **TOU** — Time of Use. Rate structure where electricity prices vary by time period (on-peak, off-peak, mid-peak), incentivizing customers to shift consumption to lower-cost hours. A key rate plan type that URPX represents.
+- **TRL** — Technology Readiness Level. A 1–9 scale (originating at NASA, widely used in EU research programs) for gauging the maturity of a technology, from basic principles observed (TRL 1) to proven in operational deployment (TRL 9). TRL 3–5 indicates validation in a lab or otherwise relevant environment, short of production use.
 - **TSO** — Transmission System Operator. Entity responsible for operating and maintaining a transmission grid.
 - **USEF** — Universal Smart Energy Framework. Framework for smart energy systems that defines market roles, interactions, and coordination mechanisms for flexibility trading. The USEF Flex Trading Protocol (UFTP) is the subset focused on flexibility exchange between aggregators and grid operators, implemented by the Shapeshifter project.
 - **UFTP** — USEF Flex Trading Protocol. See USEF.
@@ -106,6 +107,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 
 ## Software & Infrastructure Terms
 
+- **Amortized optimization** — A machine-learning approach that trains a model to solve a whole distribution of related optimization problems, so that solving a new instance becomes a fast forward pass rather than an iterative solve run from scratch. Used by EnerGNN to produce near-instant approximate solutions to recurring power system optimization problems, including cases where no labeled solutions exist (self-supervised training).
 - **ANSSI BP-028** — French national cybersecurity agency (ANSSI) hardening guide for GNU/Linux systems. Used as a compliance benchmark for SEAPATH security validation.
 - **Ansible** — Open source IT automation tool for configuration management and deployment. Used by SEAPATH for infrastructure-as-code provisioning.
 - **Ceph** — Distributed storage system that replicates data across cluster nodes. Used by SEAPATH to ensure VM disk images survive hardware failures.
@@ -117,6 +119,7 @@ Terms and acronyms used across LF Energy project overviews. Target audience: uti
 - **Foundation model** — A large AI model pre-trained on broad data that can be fine-tuned for specific downstream tasks. In the power systems context, OpenGridFM applies this approach using graph neural networks trained on power flow data, which can then be adapted for tasks like contingency analysis or optimal power flow approximation.
 - **Gymnasium** — Open-source Python API and library (maintained by the Farama Foundation, successor to OpenAI Gym) that provides a standard interface for reinforcement-learning environments, defining how an agent observes state, takes actions, and receives rewards each time step. Grid2Op and CityLearn are both built on the Gymnasium API.
 - **GNN** — Graph Neural Network. A type of neural network designed to operate on graph-structured data, where information is represented as nodes and edges. In power systems, buses map to nodes and branches to edges, making GNNs a natural fit for learning from grid topology and operating data.
+- **H2MG** — Hyper Heterogeneous Multi Graph. A graph representation introduced by EnerGNN for modeling industrial and energy networks without simplifying them, capturing three properties at once: hyper-edges (connections that join more than two components), heterogeneity (multiple component types such as lines, transformers, generators, loads), and multi-graph structure (multiple components collocated at the same point).
 - **RL** — Reinforcement Learning. A machine learning approach in which an agent learns a policy by interacting with an environment and receiving reward signals tied to outcomes, rather than from labeled examples. In power systems, RL is used to train automated control strategies (topology switching, redispatch) against simulated grids — for example in Grid2Op and AINETUS — or demand-side control strategies for buildings and DERs, as in CityLearn.
 - **Sim2Real** — Sim-to-Real. The transfer of a model or policy trained in a simulation environment to a real-world system, accounting for the gap between simulation assumptions and real-world dynamics. In AINETUS, the second use case is explicitly defined as transferring AI assistant behavior from training in Grid2Op to operation in a real control room.
 - **Hypervision** — A control-room concept developed by RTE for unifying fragmented multi-screen, multi-application operator workflows into a single supervisory layer that surfaces alerts, context, and recommended actions. Underlies LF Energy's OperatorFabric and is described by AINETUS authors as the conceptual root of its Interactive AI interface.

@@ -1,6 +1,6 @@
 # OpenGridFM
 
-**Last Updated:** 2026-06-01
+**Last Updated:** 2026-07-01
 
 ## Table of Contents
 
@@ -97,6 +97,7 @@ None. OpenGridFM is a standalone research and development platform. Foundation m
 
 - **Grid2Op**: Both apply ML to power grid operations but with fundamentally different approaches. Grid2Op provides a simulation environment for developing reinforcement learning control strategies (sequential decision-making); OpenGridFM develops pre-trained foundation models for power system analysis tasks (scenario evaluation). They address different aspects of AI for grids and do not directly integrate.
 - **OpenSynth**: Complementary — OpenSynth's D-GITT datasets provide transmission topology from the French network at the scale and fidelity needed for foundation model training. OpenGridFM needs large-scale, realistic grid data; OpenSynth publishes it.
+- **EnerGNN**: Similar approach, different scope — both are open source toolkits for building GNN models of power grids. OpenGridFM pre-trains and fine-tunes foundation models for power system analysis; EnerGNN is a general-purpose GNN library emphasizing the hyper-heterogeneous multi-graph (H2MG) representation and amortized optimization across analysis and control use cases. They do not directly integrate.
 
 ## Maturity & Adoption
 
