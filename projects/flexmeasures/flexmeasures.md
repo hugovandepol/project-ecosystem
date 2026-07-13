@@ -1,6 +1,6 @@
 # FlexMeasures
 
-**Last Updated:** 2026-06-15
+**Last Updated:** 2026-07-01
 
 ## Table of Contents
 
@@ -106,6 +106,7 @@ Markets & Programs
 - **CUPID**: Complementary — FlexMeasures decides what each DER should do; CUPID can serve as the device-facing protocol layer, carrying those dispatch decisions to and monitoring telemetry back from inverters, batteries, EV chargers, and other DERs over IEEE 2030.5.
 - **CityLearn**: Similar domain, different intent — both coordinate flexible behind-the-meter assets (batteries, EV chargers, heat pumps). CityLearn is a research environment for developing and benchmarking demand-side control algorithms; FlexMeasures is an applied, production system that computes and serves dispatch schedules for real assets. Control approaches validated in CityLearn could inform applied schedulers like FlexMeasures.
 - **RTC-Tools**: Overlapping scope — both can optimize energy storage dispatch. RTC-Tools is a lower-level optimization framework that supports broader problem classes (multi-market value stacking, stochastic optimization, Modelica-based physical modeling, hydropower) but requires more engineering effort to deploy. FlexMeasures is a higher-level application with a REST API, web UI, multi-tenancy, and built-in forecasting that is more turnkey for behind-the-meter flexibility.
+- **Smart HEMS Benchmark**: Complementary across the research/applied boundary — Smart HEMS Benchmark evaluates and ranks residential HEMS control algorithms against shared datasets and scenarios, while FlexMeasures computes and serves dispatch schedules for real assets. Controllers validated in the benchmark could inform applied schedulers like FlexMeasures; the Smart HEMS Benchmark TAC proposal explicitly identifies FlexMeasures as a synergy target.
 
 ## Maturity & Adoption
 

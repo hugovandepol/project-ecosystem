@@ -1,6 +1,10 @@
 # LF Energy Project Taxonomy
 
+<<<<<<< HEAD
 **Last Updated:** 2026-06-23
+=======
+**Last Updated:** 2026-07-01
+>>>>>>> main
 
 ## Contents
 
@@ -60,13 +64,19 @@ Software whose content supports analytical activities — modeling, simulation s
 | PowSyBl | Transmission | Network modeling, power flow, contingency analysis, capacity calculation |
 | Dynawo | Transmission | Dynamic and transient power system simulation |
 | OpenGridFM | Transmission, Distribution | Foundation models for power system analysis |
+| EnerGNN | Transmission | Graph neural network library for real-life and full-scale energy networks |
 | Power Grid Model | Distribution | High-performance steady-state distribution network analysis |
 | Arras | Distribution | Agent-based distribution system scenario planning |
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
 | OpenSynth | Transmission, Distribution | Synthetic grid topology and smart meter datasets for research and modeling |
 | OpenSTEF | Distribution | Short-term (up to 48-hour) energy load forecasting |
+<<<<<<< HEAD
 | covXtreme | Cross-cutting | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
 | ReLife | Cross-cutting | Reliability/survival modeling and maintenance-policy optimization for asset renewal |
+=======
+| Smart HEMS Benchmark | Behind-the-meter | Benchmarking of residential DER siting/sizing, HEMS dispatch, and VPP participation |
+| covXtreme | Generation | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
+>>>>>>> main
 
 ### Operations
 
@@ -146,12 +156,13 @@ When a project could reasonably fit in more than one segment or function, these 
 - **CityLearn** — Operations / BTM + Research-intent. The demand-side analog to Grid2Op: a Gymnasium control environment whose content is operational DER coordination (storage dispatch, device power modulation) at research maturity. Demand-response framing could suggest M&P, but it does not encode market-clearing or program enrollment/measurement/settlement — its activity content is operational control.
 - **OpenSTEF** — P&A / Distribution. Forecasting is analytical even when its output feeds operations.
 - **SOGNO** — Operations / Distribution primary, with secondary value in P&A (DPsim, CIM tooling).
+- **Smart HEMS Benchmark** — P&A / BTM + Research-intent. Contrast with CityLearn: CityLearn's content IS a control environment (Operations), whereas Smart HEMS Benchmark's defining activity is evaluation and ranking — it produces comparative metrics, sensitivity analyses, and rankings that inform decisions (system sizing, algorithm selection, VPP feasibility), does not act on real-time grid state, and includes a 1–15 year siting/sizing phase with no CityLearn analog. Its HEMS-dispatch phase has a secondary operational-control character. AI/ML is **No**: AI-driven controllers are among the methods it *evaluates*, not what the platform *is* (the CityLearn/FlexMeasures precedent); tagging it Yes would force broadening the AI/ML tag definition and dilute its discriminating value.
 
 ## Grid Segment x Function Matrix
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** | **Cross-cutting** |
 |---|---|---|---|---|---|
-| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | | covXtreme, ReLife |
+| **Planning & Analysis** | | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° | covXtreme, ReLife |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° | |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM | |
 
@@ -213,6 +224,7 @@ Applied projects follow the normal deployment maturity arc (R&D → Piloting →
 | OpenGridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
 | OpenSynth | Research | Synthetic data generation for research and model training |
 | p-SWAMP | Research | Wide-area monitoring R&D platform and testbed |
+| Smart HEMS Benchmark | Research | Benchmarking/evaluation platform for residential DER and HEMS |
 | *(all others)* | Applied | |
 
 ### AI/ML
@@ -222,6 +234,7 @@ Identifies projects where **AI or machine learning is core to the project's purp
 | Project | Rationale |
 |---------|-----------|
 | AINETUS | Reinforcement learning agents, graph neural solver, and AI explainability ARE the project |
+| EnerGNN | Graph neural networks ARE the project |
 | OpenGridFM | Foundation models ARE the project |
 | OpenSTEF | ML forecasting pipeline is the core capability |
 | OpenSynth | Generative AI models (VAE, diffusion) are the core |
@@ -276,6 +289,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | covXtreme | Applied | | | Software |
 | CUPID | Applied | | | Software |
 | Dynawo | Applied | | Modeling & Sim | Software |
+| EnerGNN | Applied | AI/ML | | Software |
 | EVerest | Applied | | | Software |
 | FIDOpower | Applied | | | Software |
 | FlexMeasures | Applied | | | Software |
@@ -299,6 +313,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | SEAPATH | Applied | | | Software |
 | SEF | Applied | | | Software |
 | Shapeshifter | Applied | | | Software |
+| Smart HEMS Benchmark | Research | | | Software |
 | SOGNO | Applied | | Modeling & Sim | Software |
 | TROLIE | Applied | | | Specification |
 | URPX | Applied | | | Specification |
