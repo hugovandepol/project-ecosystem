@@ -64,6 +64,7 @@ Software whose content supports analytical activities — modeling, simulation s
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
 | OpenSynth | Transmission, Distribution | Synthetic grid topology and smart meter datasets for research and modeling |
 | OpenSTEF | Distribution | Short-term (up to 48-hour) energy load forecasting |
+| Smart HEMS Benchmark | Behind-the-meter | Benchmarking of residential DER siting/sizing, HEMS dispatch, and VPP participation |
 | covXtreme | Generation | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
 
 ### Operations
@@ -144,12 +145,13 @@ When a project could reasonably fit in more than one segment or function, these 
 - **CityLearn** — Operations / BTM + Research-intent. The demand-side analog to Grid2Op: a Gymnasium control environment whose content is operational DER coordination (storage dispatch, device power modulation) at research maturity. Demand-response framing could suggest M&P, but it does not encode market-clearing or program enrollment/measurement/settlement — its activity content is operational control.
 - **OpenSTEF** — P&A / Distribution. Forecasting is analytical even when its output feeds operations.
 - **SOGNO** — Operations / Distribution primary, with secondary value in P&A (DPsim, CIM tooling).
+- **Smart HEMS Benchmark** — P&A / BTM + Research-intent. Contrast with CityLearn: CityLearn's content IS a control environment (Operations), whereas Smart HEMS Benchmark's defining activity is evaluation and ranking — it produces comparative metrics, sensitivity analyses, and rankings that inform decisions (system sizing, algorithm selection, VPP feasibility), does not act on real-time grid state, and includes a 1–15 year siting/sizing phase with no CityLearn analog. Its HEMS-dispatch phase has a secondary operational-control character. AI/ML is **No**: AI-driven controllers are among the methods it *evaluates*, not what the platform *is* (the CityLearn/FlexMeasures precedent); tagging it Yes would force broadening the AI/ML tag definition and dilute its discriminating value.
 
 ## Grid Segment x Function Matrix
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
-| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | |
+| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
@@ -209,6 +211,7 @@ Applied projects follow the normal deployment maturity arc (R&D → Piloting →
 | OpenGridFM | Research | Foundation model research for power systems — may transition to Applied if it produces operational tools |
 | OpenSynth | Research | Synthetic data generation for research and model training |
 | p-SWAMP | Research | Wide-area monitoring R&D platform and testbed |
+| Smart HEMS Benchmark | Research | Benchmarking/evaluation platform for residential DER and HEMS |
 | *(all others)* | Applied | |
 
 ### AI/ML
@@ -296,6 +299,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | SEAPATH | Applied | | | Software |
 | SEF | Applied | | | Software |
 | Shapeshifter | Applied | | | Software |
+| Smart HEMS Benchmark | Research | | | Software |
 | SOGNO | Applied | | Modeling & Sim | Software |
 | TROLIE | Applied | | | Specification |
 | URPX | Applied | | | Specification |

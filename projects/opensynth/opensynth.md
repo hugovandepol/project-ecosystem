@@ -1,6 +1,6 @@
 # OpenSynth
 
-**Last Updated:** 2026-06-15
+**Last Updated:** 2026-07-01
 
 ## Table of Contents
 
@@ -97,6 +97,7 @@ None. OpenSynth provides data resources that feed into planning, forecasting, an
 - **PowSyBl**: Integration — D-GITT datasets use PowSyBl's XIIDM format and are loaded using pypowsybl. PowSyBl is the primary tool for working with D-GITT's transmission topology data.
 - **OpenGridFM**: Complementary — OpenGridFM builds AI foundation models for power system analysis and needs large-scale, realistic grid data for training. OpenSynth's D-GITT datasets provide transmission topology at the scale and fidelity needed for foundation model development.
 - **CityLearn**: Complementary data source — OpenSynth's synthetic smart-meter datasets could be used to generate prototypical neighborhoods for CityLearn's demand-side control simulations. Both are research-intent projects serving the modeling and ML community.
+- **Smart HEMS Benchmark**: Complementary data source — OpenSynth's synthetic smart-meter datasets could supply prototypical household load profiles for Smart HEMS Benchmark's scenarios, alongside the open datasets (e.g., ResStock) it already uses. Both are research-intent projects serving the modeling and ML community.
 
 ## Maturity & Adoption
 
