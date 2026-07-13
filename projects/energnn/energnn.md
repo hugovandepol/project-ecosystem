@@ -1,6 +1,6 @@
 # EnerGNN
 
-**Last Updated:** 2026-07-01
+**Last Updated:** 2026-07-13
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@ A Graph Neural Network library for real-life energy networks.
 
 ## Overview
 
-EnerGNN is a Python library, built on JAX and Flax, for applying graph neural networks (GNNs) to full-scale energy networks. Its central idea is a data representation called the Hyper Heterogeneous Multi Graph (H2MG), which captures the way a real transmission grid is actually wired: connections that join more than two components at once (hyper), many different component types such as lines, transformers, generators, and loads (heterogeneous), and multiple components sharing the same location (multi). General-purpose GNN libraries assume simpler graphs, so EnerGNN exists to give power system engineers a modeling toolkit that matches the structure of their networks rather than forcing the network into a simplified form.
+EnerGNN is a Python library, built on JAX and Flax, for applying graph neural networks (GNNs) to full-scale energy networks. Its central idea is a data representation called the Hyper Heterogeneous Multi Graph (H2MG), which captures the way a real energy network is actually wired: connections that join more than two components at once (hyper), many different component types such as lines, transformers, generators, and loads (heterogeneous), and multiple components sharing the same location (multi). General-purpose GNN libraries assume simpler graphs, so EnerGNN exists to give energy system engineers a modeling toolkit that matches the structure of their networks rather than forcing the network into a simplified form. Developed for power systems but applicable to other domains, such as gas or water networks.
 
 The problem EnerGNN targets is the growing gap between the number of operational studies a transmission operator needs to run and the time that conventional numerical solvers take to run them. Many grid problems — screening thousands of contingencies, choosing voltage setpoints, deciding switch positions — are optimization problems that must be re-solved for every new operating condition. EnerGNN uses "amortized optimization": rather than solving each case from scratch, a GNN is trained once on many cases so that, for any new operating condition, it produces a good solution almost instantly. Because the models are built on the H2MG representation, they remain valid when the grid's structure varies — line outages, network expansion, or the renaming and reordering of equipment that happens continuously in a real control environment.
 
@@ -113,7 +113,7 @@ R&D
 - Université de Liège / ULiège (university — academic lead)
 - INRIA (research institute, France)
 
-Academic partnerships also span Université Paris-Saclay, Mines Paris-PSL, and University College Dublin, with an upcoming collaboration with InstaDeep (as stated in the April 2026 TAC presentation).
+Academic partnerships also span Université Paris-Saclay, Mines Paris-PSL, and University College Dublin, with an ongoing collaboration with InstaDeep since April 2026.
 
 ## Learn More
 

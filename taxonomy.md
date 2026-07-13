@@ -58,7 +58,7 @@ Software whose content supports analytical activities — modeling, simulation s
 | PowSyBl | Transmission | Network modeling, power flow, contingency analysis, capacity calculation |
 | Dynawo | Transmission | Dynamic and transient power system simulation |
 | OpenGridFM | Transmission, Distribution | Foundation models for power system analysis |
-| EnerGNN | Transmission | Graph neural network library for building fast surrogate models of large energy networks |
+| EnerGNN | Transmission | Graph neural network library for real-life and full-scale energy networks |
 | Power Grid Model | Distribution | High-performance steady-state distribution network analysis |
 | Arras | Distribution | Agent-based distribution system scenario planning |
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
