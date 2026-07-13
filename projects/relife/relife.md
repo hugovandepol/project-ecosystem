@@ -2,7 +2,7 @@
 
 # ReLife
 
-**Last Updated:** 2026-06-23
+**Last Updated:** 2026-07-13
 
 ## Table of Contents
 
@@ -34,11 +34,11 @@
 
 ## Description
 
-Python library that models how assets age and fail using reliability and survival statistics, then compares maintenance, replacement, and run-to-failure strategies by cost and risk.
+Python library that models asset aging with various associated maintenance strategies using reliability theory, renewal theory, and socioeconomic engineering.
 
 ## Overview
 
-ReLife is a statistical toolbox for asset management decisions. Given records of how assets have behaved over time — failures, repairs, time in service, and conditions such as location or corrosion level — it fits statistical models of asset lifetime and failure behavior, then uses those models to compare maintenance strategies and project the replacements and budgets each strategy implies. It is built on NumPy and SciPy and distributed as a Python package.
+ReLife is a statistical library to guide decision-making in asset management. Given records of how assets have behaved over time — failures, repairs, time in service, deterioration measurements, and conditions such as location or corrosion level — it fits statistical models of asset lifetime and failure behavior, then uses those models to compare maintenance strategies and project the replacements and budgets each strategy implies. It is built on NumPy and SciPy and distributed as a Python package.
 
 Network operators face a recurring capital question: a large population of assets installed decades ago is aging at once, and replacing everything at once is neither affordable nor necessary. ReLife brings a quantitative, peer-reviewed basis to that question. It answers when to maintain, replace, or repair an asset, on what criteria, and at what budget — for example, comparing a run-to-failure policy against a preventive age-based replacement policy and showing the expected total cost, risk, and number of replacements of each over a planning horizon. Costs can include not only direct replacement cost but societal costs such as the shadow price of carbon, supporting socioeconomic justification of renewal investment.
 
@@ -48,21 +48,20 @@ ReLife is used internally at RTE, the French transmission system operator, and b
 
 ### What It Does
 
-Fits statistical lifetime and recurrent-event models to asset failure/repair data, then uses renewal theory to compare maintenance policies and project the expected replacements and discounted costs of each.
+Depending on the event of interest, fits statistical distributions or stochastic processes to model asset aging or behavior over time, then uses renewal theory and socioeconomic engineering to compare maintenance policies and compute the expected replacement and discounted costs of each.
 
 ### Problem(s) Solved
 
-Gives network operators a quantitative, defensible basis for asset-renewal investment decisions — when to repair, replace, or run an asset to failure, and at what budget — replacing rule-of-thumb or purely age-based replacement with data-driven reliability modeling. It also narrows the research-to-industry gap by packaging peer-reviewed reliability methods in accessible open-source form.
+Gives infrastructure operators (TSOs, railway operators, etc.) a quantitative, defensible basis for asset-renewal investment decisions — when to repair, replace, or run an asset to failure, at what budget, and how to manage spare-parts stock — replacing rule-of-thumb or purely age-based replacement with data-driven reliability modeling. It also narrows the research-to-industry gap by packaging peer-reviewed reliability methods in accessible open-source form.
 
 ### Key Capabilities
 
-- **Lifetime modeling** (`lifetime_models` module): non-parametric estimators, parametric lifetime distributions with or without covariates, and semi-parametric Cox regression for the influence of asset conditions (location, corrosion, temperature, etc.) on failure
-- **Recurrent-event modeling** (`stochastic_processes` module): non-homogeneous Poisson processes for recurrent minimal repairs
-- **Maintenance policy evaluation** (`policies` module): corrective replacement (run-to-failure) and preventive age-based replacement policies, with computation of expected discounted annual costs
+- **Lifetime modeling**: non-parametric estimators, parametric lifetime distributions with or without covariates, and semi-parametric Cox regression for the influence of asset conditions (location, corrosion, temperature, etc.) on failure
+- **Recurrent-event modeling**: non-homogeneous Poisson processes for recurrent minimal repairs
+- **Maintenance policy evaluation**: corrective replacement (run-to-failure) and preventive age-based replacement policies, with computation of expected discounted annual costs
 - **Socioeconomic cost evaluation**: costs can incorporate societal factors such as the shadow price of carbon, not just direct replacement cost
-- **Renewal-theory projection**: forecasts the expected number of replacements and associated budgets that a given maintenance policy implies over a planning horizon
-- **Renewal processes** with or without rewards, a renewal equation solver, and N-dimensional Lebesgue-Stieltjes integration
-- Can generate simulated data to study the influence of data changes and test functionality (though simulation is not its primary purpose)
+- **Renewal-theory projection**: forecasts the expected number of replacements and associated budgets that a given maintenance policy implies over a planning horizon, using renewal processes with or without rewards, a renewal equation solver, and N-dimensional Lebesgue-Stieltjes integration
+- **Simulation**: can generate simulated data to study the influence of data changes and test functionality (though simulation is not its primary purpose)
 
 ### Relevant Standards
 
@@ -86,11 +85,11 @@ Planning & Analysis
 
 #### Solution Type
 
-- Reliability & Maintenance Policy Modeling: Fits statistical models of asset lifetime and failure behavior and evaluates maintenance strategies on expected cost, risk, and number of replacements.
+- Reliability & Maintenance Policy Modeling: Fits statistical models of asset aging and behavior over time, then uses those models to compare different maintenance strategies.
 
 #### Component of
 
-- Asset Investment Planning (AIP): Provides the quantitative reliability-and-cost engine that justifies and prioritizes capital renewal of aging asset populations — the analytical core of an asset investment planning workflow.
+- Asset Investment Planning (AIP): Provides quantitative approaches to justify investment decisions for renewal of aging asset populations — the analytical core of an asset investment planning workflow.
 
 ### Cross-Cutting Tags
 
