@@ -58,6 +58,7 @@ Software whose content supports analytical activities — modeling, simulation s
 | PowSyBl | Transmission | Network modeling, power flow, contingency analysis, capacity calculation |
 | Dynawo | Transmission | Dynamic and transient power system simulation |
 | OpenGridFM | Transmission, Distribution | Foundation models for power system analysis |
+| EnerGNN | Transmission | Graph neural network library for real-life and full-scale energy networks |
 | Power Grid Model | Distribution | High-performance steady-state distribution network analysis |
 | Arras | Distribution | Agent-based distribution system scenario planning |
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
@@ -150,7 +151,7 @@ When a project could reasonably fit in more than one segment or function, these 
 
 |  | **Generation** | **Transmission** | **Distribution** | **Behind-the-meter** |
 |---|---|---|---|---|
-| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° |
+| **Planning & Analysis** | covXtreme | PowSyBl, Dynawo, OpenGridFM, OpenSynth, EnerGNN | Power Grid Model, Arras, FIDOpower, OpenGridFM, OpenSynth, OpenSTEF | Smart HEMS Benchmark° |
 | **Operations** | RTDIP | OperatorFabric, SEAPATH⁺, CoMPAS⁺, TROLIE, Grid2Op°, p-SWAMP°, AINETUS | OperatorFabric, SOGNO, GXF, SEAPATH⁺, CoMPAS⁺, GEISA, SEF, CUPID | Hyphae, ORES, EVerest⁺, CitrineOS⁺, CUPID, CityLearn° |
 | **Markets & Programs** | RTC-Tools | | Shapeshifter, OpenLEADR, CDS Registration, CDS Customer Data, URPX | FlexMeasures, OpenDSM |
 
@@ -220,6 +221,7 @@ Identifies projects where **AI or machine learning is core to the project's purp
 | Project | Rationale |
 |---------|-----------|
 | AINETUS | Reinforcement learning agents, graph neural solver, and AI explainability ARE the project |
+| EnerGNN | Graph neural networks ARE the project |
 | OpenGridFM | Foundation models ARE the project |
 | OpenSTEF | ML forecasting pipeline is the core capability |
 | OpenSynth | Generative AI models (VAE, diffusion) are the core |
@@ -274,6 +276,7 @@ Describes **what you are adopting when you adopt this project**. Most projects h
 | covXtreme | Applied | | | Software |
 | CUPID | Applied | | | Software |
 | Dynawo | Applied | | Modeling & Sim | Software |
+| EnerGNN | Applied | AI/ML | | Software |
 | EVerest | Applied | | | Software |
 | FIDOpower | Applied | | | Software |
 | FlexMeasures | Applied | | | Software |

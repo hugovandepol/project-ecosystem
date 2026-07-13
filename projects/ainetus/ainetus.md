@@ -1,6 +1,6 @@
 # AINETUS
 
-**Last Updated:** 2026-05-21
+**Last Updated:** 2026-07-01
 
 ## Table of Contents
 
@@ -96,6 +96,7 @@ Operations
 
 - **Grid2Op**: Dependency — Grid2Op is the simulation environment in which AINETUS agents are trained and evaluated. AINETUS contributes back to the Grid2Op ecosystem by exercising its sequential decision-making interface with production-oriented AI components.
 - **OperatorFabric**: Complementary — OperatorFabric provides the control-room notification and coordination platform; AINETUS provides the AI recommendations and explanations that such a platform can surface to operators.
+- **EnerGNN**: Similar methods, different layer — both apply GNNs to transmission grid problems and originate in RTE-led research. AINETUS's agent loop includes a graph neural power flow solver; EnerGNN is a general-purpose GNN modeling library of the kind used to build such models. No asserted direct integration.
 
 ## Maturity & Adoption
 
