@@ -1,10 +1,6 @@
 # LF Energy Project Taxonomy
 
-<<<<<<< HEAD
-**Last Updated:** 2026-06-23
-=======
 **Last Updated:** 2026-07-01
->>>>>>> main
 
 ## Contents
 
@@ -70,13 +66,9 @@ Software whose content supports analytical activities — modeling, simulation s
 | FIDOpower | Distribution | Interactive notebook-based distribution analysis workflows |
 | OpenSynth | Transmission, Distribution | Synthetic grid topology and smart meter datasets for research and modeling |
 | OpenSTEF | Distribution | Short-term (up to 48-hour) energy load forecasting |
-<<<<<<< HEAD
 | covXtreme | Cross-cutting | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
 | ReLife | Cross-cutting | Reliability/survival modeling and maintenance-policy optimization for asset renewal |
-=======
 | Smart HEMS Benchmark | Behind-the-meter | Benchmarking of residential DER siting/sizing, HEMS dispatch, and VPP participation |
-| covXtreme | Generation | Statistical modeling of extreme environmental events for offshore wind and infrastructure design |
->>>>>>> main
 
 ### Operations
 

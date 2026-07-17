@@ -2,7 +2,7 @@
 
 # ReLife
 
-**Last Updated:** 2026-07-13
+**Last Updated:** 2026-07-17
 
 ## Table of Contents
 
@@ -38,11 +38,13 @@ Python library that models asset aging with various associated maintenance strat
 
 ## Overview
 
-ReLife is a statistical library to guide decision-making in asset management. Given records of how assets have behaved over time — failures, repairs, time in service, deterioration measurements, and conditions such as location or corrosion level — it fits statistical models of asset lifetime and failure behavior, then uses those models to compare maintenance strategies and project the replacements and budgets each strategy implies. It is built on NumPy and SciPy and distributed as a Python package.
+In the context of aging infrastructures and climate change, asset managers face critical investment decisions. ReLife helps asset managers perform quantitative risk analysis to evaluate and compare risk control options over large asset populations based on probability models along with socio-economic criteria. Quantitative risk analysis is highly desirable for justifying investment decisions, maximizing asset value and anticipating stocks and budgets.
 
-Network operators face a recurring capital question: a large population of assets installed decades ago is aging at once, and replacing everything at once is neither affordable nor necessary. ReLife brings a quantitative, peer-reviewed basis to that question. It answers when to maintain, replace, or repair an asset, on what criteria, and at what budget — for example, comparing a run-to-failure policy against a preventive age-based replacement policy and showing the expected total cost, risk, and number of replacements of each over a planning horizon. Costs can include not only direct replacement cost but societal costs such as the shadow price of carbon, supporting socioeconomic justification of renewal investment.
+ReLife analyzes historical asset data — failures, repairs, service duration, deterioration measurements, and contextual factors like location or corrosion levels — to build statistical models for lifetime distributions and failure behavior. These models are then used to compare maintenance strategies and determine when to maintain, repair, or replace assets by balancing preventive and corrective costs. It identifies optimal maintenance policies, and projects the expected total cost and replacement count over a planned horizon. Cost calculations include direct replacement expenses and societal costs, such as carbon shadow pricing, which strengthens the economic justification for renewal investments.
 
 ReLife is used internally at RTE, the French transmission system operator, and by a growing set of other infrastructure operators. Its outputs feed the asset-renewal and capital-planning decisions that asset managers and investors make. Although it originates in grid asset management, the methods are general and apply to any aging asset population.
+
+The library is built on NumPy and SciPy and distributed as a Python package.
 
 ## Technical Profile
 
