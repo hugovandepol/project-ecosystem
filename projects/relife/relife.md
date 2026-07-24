@@ -2,7 +2,7 @@
 
 # ReLife
 
-**Last Updated:** 2026-07-17
+**Last Updated:** 2026-07-24
 
 ## Table of Contents
 
@@ -34,7 +34,7 @@
 
 ## Description
 
-Python library that models asset aging with various associated maintenance strategies using reliability theory, renewal theory, and socioeconomic engineering.
+Built on reliability theory, ReLife helps infrastructure managers select maintenance policies that minimize socio-economic costs and justify investment decisions.
 
 ## Overview
 
