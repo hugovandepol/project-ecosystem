@@ -27,7 +27,7 @@
 		- General: https://lists.lfenergy.org/g/powsybl
 		- Developers: https://lists.lfenergy.org/g/powsybl-dev
 		- Technical Steering Committee: https://lists.lfenergy.org/g/powsybl-tsc
-	- Slack: https://join.slack.com/t/powsybl/shared_invite/zt-36jvd725u-cnquPgZb6kpjH8SKh~FWHQ (note: this gets stale. Look at https://www.powsybl.org/pages/community/contact.html for updated version.)
+	- Slack: https://powsybl.slack.com (join via https://join.slack.com/t/powsybl/shared_invite/zt-36jvd725u-cnquPgZb6kpjH8SKh~FWHQ)
 - LFX Insights: https://insights.linuxfoundation.org/project/powsybl
 - Other:
 	- Roadmap: https://github.com/powsybl/.github/wiki/Roadmap
