@@ -21,7 +21,7 @@
 - Code: https://github.com/openleadr
 - Documentation: https://github.com/OpenLEADR/openleadr-rs
 - Calendar: https://zoom-lfx.platform.linuxfoundation.org/meetings/openleadr?view=month
-- LinkedIn: None
+- LinkedIn: 
 - Community:
 	- Mailing List: https://lists.lfenergy.org/g/openleadr
 	- Slack: https://app.slack.com/client/TLU68MTML/C045K9YGX52
